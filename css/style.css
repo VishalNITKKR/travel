@@ -34,7 +34,7 @@ h1,h2,h3{
 /* ######### utility classes ############*/
 .container{
     max-width: 1200px;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 .lg-heading{
@@ -60,10 +60,10 @@ h1,h2,h3{
 }
 .btn{
     display: inline-block;
-    padding: 0.5em 1.5em;
+    padding: 0.3em 1em;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0.5em;
+    margin: 0.2em;
 
 }
 .btn-primary{
@@ -166,13 +166,16 @@ h1,h2,h3{
 .showcase{
     background: #ddd;
     padding: 6rem 0;
-    /* border: 2px solid red; */
-    height: 100vh;
-    
+    border: 2px solid red;
+    /* height: 100vh; */
+    /* margin-bottom: 20px; */
 }
 .row{
-    height: 230px;
+    height: 250px;
     /* border: 2px solid black; */
+    box-shadow: 11px 18px 8px 0px rgba(207,192,192,0.75);
+/* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
 }
 .row1{
     margin-bottom: 6rem;
@@ -207,4 +210,35 @@ h1,h2,h3{
     object-fit: cover;
 
 }
+/* ########### Feature section styling ##########*/
+.feature{
+    padding: 10rem 0;
+}
+.box-wrapper{
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 20px 0px black;
+}
+.box{
+    width: 33.333333%;
+    float: left;
+    padding: 1.2rem;
+    text-align: center;
+    /* border: 2px solid blue; */
+}
 
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box1, .box3{
+    background-color: #263238;
+    color: white;
+}
+.box2{
+    /* background: rgb(235, 165, 165);
+background: linear-gradient(90deg, rgb(240, 123, 158) 0%, rgba(9,14,121,0.9691558441558441) 44%, rgba(0,212,255,1) 100%); */
+background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+color: white;
+
+}
