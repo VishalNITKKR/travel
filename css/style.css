@@ -84,6 +84,9 @@ h1,h2,h3{
 .btn-secondary:hover{
     background: #fcf3f2;
 }
+.bg-dark{
+    background-color: #263238;
+}
 
 
 
@@ -115,15 +118,15 @@ h1,h2,h3{
     padding: 1rem;
 }
 
-.header .navbar .logo{
+ .navbar .logo{
     float: left;
     /* font-size: 3.5rem; */
 }
-.header .navbar .nav-items{
+.navbar .nav-items{
     float: right;
     margin-top: 1rem;
 }
-.header .navbar .nav-item{
+.navbar .nav-item{
     display: inline-block;
     padding: 1rem;
     text-transform: uppercase;
@@ -240,5 +243,60 @@ h1,h2,h3{
 background: linear-gradient(90deg, rgb(240, 123, 158) 0%, rgba(9,14,121,0.9691558441558441) 44%, rgba(0,212,255,1) 100%); */
 background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
 color: white;
+
+}
+
+/* ################# footer Styling #################*/
+.footer{
+    text-align: center;
+    background: #263238;
+    color: white;
+    padding: 2rem;
+}
+.social-media-links i{
+    margin: 2rem;
+}
+
+
+/*#############About Page Styling ###############*/
+.about{
+    padding: 5rem 0;
+}
+
+.about-heading::after{
+    /* border-bottom: 6px solid red; */
+    content: '';
+    display: block;
+    border: 3px solid red;
+    width: 100%;
+}
+
+/* ########### About Wrapper ############## */
+.about-wrapper{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-top: 1.7rem;
+}
+.about .left{
+    float: left;
+    width: 50%;
+}
+
+.about .right{
+    float: right;
+    width: 50%;
+
+}
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color: red;
+    font-weight: bold;
+    padding-right: 1rem;
 
 }
